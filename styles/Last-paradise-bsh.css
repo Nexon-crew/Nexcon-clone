@@ -222,7 +222,7 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .video-container_bsh video {
@@ -457,32 +457,210 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     padding: 10vh 7vw;
     gap: 3rem;
 }
-.introduce-game .introduce-title{
+
+.introduce-game .introduce-title {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30vw;
     height: 25vh;
     padding-top: 5rem;
-    background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/about_tape.png")
-    no-repeat;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/about_tape.png") no-repeat;
     background-position-y: 35%;
     background-position-x: 15%;
 }
-.introduce-game .introduce-title h3{
+
+.introduce-game .introduce-title h3 {
     font-size: 6rem;
     font-weight: 700;
     margin-left: 2vw;
     color: #e6e6eb;
     line-height: 7rem;
 }
-.introduce-game .introduce-text{
+
+.introduce-game .introduce-text {
     width: 30vw;
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: 500;
     color: #96979c;
     margin-left: 15rem;
+}
+
+/*게임스토리 시작*/
+.story-bgcontainer{
+    position: relative;
+    overflow: hidden;
+}
+.story-bgcontainer .story-img-box {
+    width: 120vw;
+    height: 120vh;
+    /*background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg") no-repeat center/cover;*/
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: img-rolling 40s linear infinite alternate, img-changing 40s linear infinite;
+}
+.game-story {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.game-story .story-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 1px solid red;*/
+    height: 100vh;
+    padding: 0 2vw;
+    margin-left: 10vw;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_header-bg.png") no-repeat center/cover;
+    padding-bottom: 25vh;
+
+}
+
+.game-story .story-title h4 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #e6e6eb;
+    line-height: 7rem;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-line.png") no-repeat;
+    background-position-y: 100%;
+    height: 20vh;
+    margin-top: 3vh;
+}
+
+.game-story .story-title p {
+    /*border: 1px solid red;*/
+    width: 20vw;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #e6e6eb;
+    line-height: 2.2rem;
+    margin-top: 5rem;
+}
+
+/*좌측 완료*/
+.game-story .text-box {
+    /*border: 1px red solid;*/
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    margin-right: 12vw;
+    margin-top: 35vh;
+}
+
+.game-story .text-box div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+.game-story .text-1 {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: 30;
+    opacity: 0;
+}
+
+.game-story .text-2 {
+    position: absolute;
+    top: -0.1rem;
+    right: 0;
+    z-index: 31;
+    opacity: 0;
+}
+
+.game-story .text-3 {
+    position: absolute;
+    top: -21rem;
+    right: 0;
+    z-index: 32;
+    opacity: 0;
+}
+
+.game-story .text-box h5 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #e6e6eb;
+    margin-bottom: 3rem;
+}
+
+.game-story .text-box p {
+    color: #e6e6eb;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 40vw;
+    text-align: right;
+}
+/*text-rolling effect 추가*/
+@keyframes text-rolling {
+    0% {
+        opacity: 0;
+    }
+    3.3% {
+
+        opacity: 1;
+    }
+    26.4% {
+        opacity: 1;
+    }
+    29.7% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.game-story .text-box .text-1 {
+    animation: text-rolling 30s infinite;
+}
+
+.game-story .text-box .text-2 {
+    animation: text-rolling 30s infinite;
+    animation-delay: 10s;
+}
+
+.game-story .text-box .text-3 {
+    animation: text-rolling 30s infinite;
+    animation-delay: 20s;
+}
+
+@keyframes img-rolling {
+    0% {
+        transform: rotate(0deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(10deg) scale(1.2);
+    }
+}
+@keyframes img-changing{
+
+    0%{
+        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg")
+        no-repeat center/cover;
+    }
+
+    50%{
+        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_02.jpg")
+        no-repeat center/cover;
+    }
+    100%{
+        background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_03.jpg")
+        no-repeat center/cover;
+    }
 }
 
 
