@@ -225,7 +225,7 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
 .main-section_bsh {
     height: 100vh;
     width: 100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .video-container_bsh {
@@ -306,32 +306,150 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     width: 12rem;
     height: 12rem;
     /*border: 1px solid red;*/
-    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/play.png")
-    no-repeat center/cover;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/play.png") no-repeat center/cover;
     transition: 0.4s;
     filter: brightness(1000%);
 }
+
 .play-trailer_bsh:hover {
     filter: brightness(100%);
     cursor: pointer;
 }
-.play-trailer_bsh span{
+
+.play-trailer_bsh span {
     color: white;
     position: absolute;
     top: 40%;
     left: -60%;
 }
+
 /*플레이버튼 끝*/
+/*메인섹션 완료*/
+
+/*이메일 구독 섹션 시작*/
+
+.second-section{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/subscribe_bg.png")
+    no-repeat center/cover;
+}
+.email-register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    flex-direction: column;
+    padding: 10vh 0;
+    background:url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/subscribe_frame.png")
+no-repeat;
+    background-position-x: 50%;
+    background-position-y: 57%;
+}
+.email-register .decorate-claw{
+    /*border: 1px solid red;*/
+    width: fit-content;
+}
+.email-register .decorate-claw img{
+    width: 180%;
+}
+
+.email-register .news-letter{
+    /*border: 1px solid red;*/
+    background: url('https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-line.png')
+    no-repeat bottom/contain;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    color:#f7844b;
+}
+
+.email-register h1{
+    font-size: 4.3rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 6rem;
+    color: #e6e6eb;
+    width: 40vw;
+
+;
+}
+.email-register h1 span{
+    color:#f7844b;
+    position: relative;
+}
+/*메인 텍스트까지 끝*/
+
+.email-register .email-input{
+    width: 40vw;
+    height: 8vh;
+    background: transparent;
+    border:1px solid rgba(150, 150, 150, 0.6);
+    font-size: 2rem;
+    padding: 0 3rem;
+    color: #e6e6eb;
+}
+.email-register .sub-button a{
+    display: block;
+    /*border: 1px solid red;*/
+    width: 40vw;
+    height: 7.5vh;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    font-weight: 700;
+    background:url("/src/paradise-subscribe_button-bg_bsh.png")
+    no-repeat center/cover;
+    transition: 0.4s;
+}
+.email-register .sub-button a:hover{
+    background:url("/src/paradise-subscribe_button-bg-hover_bsh.png")
+    no-repeat center/cover;
+}
+/*구독하기 버튼 끝*/
+.email-register .checkbox{
+    margin-right: 16%;
+    line-height: 4rem;
+    color: #96979c;
+}
+.email-register .checkbox span{
+    margin-left: 2rem;
+}
+.email-register .checkbox a{
+    margin-left: 3rem;
+    color: #f7844b;
+    text-decoration: underline;
+}
+.email-register .checkbox a:hover{
+    font-weight: 600;
+}
+/*체크박스 끝*/
+
+.email-register .information{
+    /*border: 1px solid red;*/
+    height: 10vh;
+    width: 37vw;
+    color: #96979c;
+    font-size: 1.7rem;
 
 
+}
+.email-register .information li:last-child{
+    margin-top: 2rem;
+}
+.email-register .information li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
+.email-register .information i{
+    font-size: 8px;
+    line-height: 5px;
+    margin-right: 5px;
+    align-self: flex-start;
+    margin-top: 6px;
+}
 
