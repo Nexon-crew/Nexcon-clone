@@ -17,7 +17,6 @@ body {
 
 /* 해더 */
 header.header-container {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,4 +97,78 @@ header.header-container .header-right .log-in:hover {
     border-radius: 15px;
 }
 
-/* nav 조정  */
+/* nav */
+section.nav-wind {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #090806;
+    color: #ffffff;
+    height: 10.5vh;
+    width: 100%;
+    border: 2px red solid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-wind .wind-logo {
+    flex: 2;
+}
+.nav-wind .wind-logo img {
+}
+section.nav-wind .center-list {
+    flex: 7;
+}
+section.nav-wind .center-list ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+section.nav-wind .center-list ul li {
+    padding-right: 8%;
+}
+section.nav-wind .center-list ul li a:hover {
+    color: #88cafd;
+}
+section.nav-wind .wind-right {
+    flex: 1;
+    align-items: center;
+    color: #fff;
+}
+section.nav-wind .wind-right .wind-coupon-youtube{
+    display: flex;
+    justify-content: flex-end;
+}
+section.nav-wind .wind-right .wind-coupon-youtube a {
+    padding-right: 15%;
+}
+section.nav-wind .wind-right .wind-coupon-youtube a:hover{
+    opacity: 0.6;
+}
+/*section.nav-wind .wind-right .wind-start{*/
+
+/*}*/
+section.nav-wind .wind-start{
+    height: 100%;
+    overflow: hidden;
+    margin-right: 0;
+    padding-right: 0;
+    position: relative;
+
+}
+section.nav-wind .wind-start span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_off.png')
+    no-repeat center ;
+}
+section.nav-wind .wind-start video:hover {
+    opacity: 0.5;
+}
+/*section.nav-wind .wind-right .wind-start .pc-start span {*/
+/*    position: absolute;*/
+/*    background: url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_hover.png")*/
+/*                no-repeat center/cover;*/
+/*}*/
