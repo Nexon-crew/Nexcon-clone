@@ -46,6 +46,6 @@
 | 김대현     | GitHub Organization 생성, main 브랜치 push 보호 룰 설정                   |
 | 백승현     | `.gitignore` 작성, `.idea/` 폴더 예외 처리, 1980px 해상도 기준 설정       |
 | 신동준     | `styles`, `src` 폴더 구조 생성, 빈 폴더 push 문제를 더미 파일로 해결       |
-| PH         | GitHub Projects 역할 리스트 생성 문제 해결 (검색 기능 활용), merge 검토자 1명 설정 |
+| 박현수        | GitHub Projects 역할 리스트 생성 문제 해결 (검색 기능 활용), merge 검토자 1명 설정 |
 
 ---
