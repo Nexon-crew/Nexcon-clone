@@ -1,8 +1,9 @@
 @import url("common.css");
 
-body{
+body {
     width: 100vw;
 }
+
 header.main-header_bsh {
     width: 100%;
     display: flex;
@@ -101,10 +102,12 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     justify-content: space-between;
     align-items: center;
 }
-.second-header_bsh .paradise-logo_bsh{
+
+.second-header_bsh .paradise-logo_bsh {
     /*border: 1px solid yellow;*/
     margin-left: 2rem;
 }
+
 .second-header_bsh .paradise-slogan_bsh {
     /*border: 1px solid red;*/
     width: 100%;
@@ -114,7 +117,7 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
 
 /*서브 네비게이션*/
 
-.second-header_bsh .snb_bsh{
+.second-header_bsh .snb_bsh {
     /*border: 1px solid blue;*/
 }
 
@@ -128,23 +131,24 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     font-size: 2.5rem;
     color: white;
 }
+
 /* 서브네비게이션 사이의 줄*/
-.second-header_bsh .snb_bsh ul li{
+.second-header_bsh .snb_bsh ul li {
     width: 5rem;
     /*border: 1px solid red;*/
 }
-.second-header_bsh .snb_bsh ul li:nth-child(-n+2){
+
+.second-header_bsh .snb_bsh ul li:nth-child(-n+2) {
     border-right: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 
-    /*구독배너*/
+/*구독배너*/
 .second-header_bsh .subscribe_bsh {
     width: 262px;
     height: 6rem;
     /*border: 1px solid red;*/
-    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/be8f510beea7dc62c17f792ce355f816c133a833/assets/teaser/image/header_button-bg.png")
-    no-repeat bottom/cover;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/be8f510beea7dc62c17f792ce355f816c133a833/assets/teaser/image/header_button-bg.png") no-repeat bottom/cover;
     background-size: 110%;
     display: flex;
     align-items: center;
@@ -158,13 +162,13 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
 .second-header_bsh .subscribe_bsh i > span {
     font-size: 1.9rem;
     font-weight: 700;
-    margin-left: 1rem  ;
+    margin-left: 1rem;
 }
 
 /*구독배너 끝*/
 
 /* 좌측 세로 배너 */
-.vertical-header{
+.vertical-header {
     display: flex;
     width: 3%;
     height: 100vh;
@@ -179,26 +183,29 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
-    padding-top: 17%;
-    padding-bottom: 3%;
-    gap:  20rem;
+    padding-top: 20%;
+    gap: 33rem;
 
 }
-.vertical-header ul{
+
+.vertical-header ul {
     /*border: 1px solid red;*/
 }
 
-.vertical-header ul li{
+.vertical-header ul li {
     padding: 80% 0;
     transition: 0.4s;
 }
-.vertical-header ul li:hover{
+
+.vertical-header ul li:hover {
     color: orange;
 }
-.vertical-header ul li:nth-child(2){
+
+.vertical-header ul li:nth-child(2) {
     border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
-.vertical-header .sound-button{
+
+.vertical-header .sound-button {
     /*border: 1px solid red;*/
     font-size: 2rem;
     display: flex;
@@ -206,43 +213,51 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     justify-content: center;
     transition: 0.4s;
 }
-.vertical-header .sound-button:hover{
+
+.vertical-header .sound-button:hover {
     color: orange;
 }
 
 /* 좌측 세로 배너 끝 */
 
 
-
 /* 메인섹션 */
 .main-section_bsh {
     height: 100vh;
     width: 100%;
+    border: 1px solid red;
 }
-.video-container_bsh{
+
+.video-container_bsh {
     width: 100%;
     pointer-events: none;
-   position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
-.video-container_bsh video{
+
+.video-container_bsh video {
     width: 100%;
 }
+
 /* 메인섹션 로고 */
-.main-section_bsh .main-section-logo{
-    width:fit-content;
+.main-section_bsh .main-section-logo {
+    width: fit-content;
     position: relative;
     top: 50%;
     left: 10%;
     z-index: 3;
 }
-.main-section_bsh .main-section-logo #paradise-logo{
+
+.main-section_bsh .main-section-logo #paradise-logo {
     width: 80%;
 }
-.main-section_bsh .main-section-subscribe_bsh{
-    border: 1px solid red;
+
+/*찜하기 뉴스레터 구독*/
+
+.main-section_bsh .main-section-subscribe_bsh {
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -250,13 +265,71 @@ header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {
     position: relative;
     top: 55%;
     left: 10%;
+    color: white;
 }
 
-.subs .main-section-subscribe_bsh{
-    width: 100%;
-    border: 1px solid red;
-    height: 100vh;
+.main-section_bsh .main-section-subscribe_bsh i.fab {
+    position: absolute;
+    top: 37%;
+    left: 18%;
+    font-size: 2rem;
 }
+
+.main-section_bsh .main-section-subscribe_bsh #pick {
+    position: absolute;
+    top: 37%;
+    left: 23%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.main-section_bsh .main-section-subscribe_bsh i.fas {
+    position: absolute;
+    top: 37%;
+    right: 33%;
+    font-size: 2rem;
+}
+
+.main-section_bsh .main-section-subscribe_bsh #news {
+    position: absolute;
+    top: 37%;
+    right: 14%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* 메인 섹션 플레이 버튼*/
+
+.play-trailer_bsh {
+    margin-left: 67vw;
+    margin-top: 15vh;
+    width: 12rem;
+    height: 12rem;
+    /*border: 1px solid red;*/
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/play.png")
+    no-repeat center/cover;
+    transition: 0.4s;
+    filter: brightness(1000%);
+}
+.play-trailer_bsh:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+.play-trailer_bsh span{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: -60%;
+}
+/*플레이버튼 끝*/
+
+
+
+
+
+
+
+
 
 
 
