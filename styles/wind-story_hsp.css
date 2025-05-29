@@ -99,6 +99,7 @@ header.header-container .header-right .log-in:hover {
 
 /* nav */
 section.nav-wind {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,7 +145,9 @@ section.nav-wind .wind-right .wind-coupon-youtube a {
 }
 section.nav-wind .wind-right .wind-coupon-youtube a:hover{
     opacity: 0.6;
-
+}
+.wind-start .pc-start {
+    padding: 0;
 }
 /*section.nav-wind .wind-right .wind-start{*/
 
@@ -153,7 +156,7 @@ section.nav-wind .wind-start{
     height: 100%;
     overflow: hidden;
     position: relative;
-    left: 4px;
+    /*left: 4px;*/
 }
 section.nav-wind div.wind-start img {
     position: absolute;
@@ -165,8 +168,7 @@ section.nav-wind div.wind-start .pc-start:hover {
     opacity: 0.5;
 }
 
-/*section.nav-wind .wind-right .wind-start .pc-start span {*/
-/*    position: absolute;*/
-/*    background: url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_hover.png")*/
-/*                no-repeat center/cover;*/
-/*}*/
+aside.right-cd-playlist {
+    position: absolute;
+}
+
