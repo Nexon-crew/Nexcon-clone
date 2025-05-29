@@ -106,7 +106,6 @@ section.nav-wind {
     color: #ffffff;
     height: 10.5vh;
     width: 100%;
-    border: 2px red solid;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -145,6 +144,7 @@ section.nav-wind .wind-right .wind-coupon-youtube a {
 }
 section.nav-wind .wind-right .wind-coupon-youtube a:hover{
     opacity: 0.6;
+
 }
 /*section.nav-wind .wind-right .wind-start{*/
 
@@ -152,21 +152,19 @@ section.nav-wind .wind-right .wind-coupon-youtube a:hover{
 section.nav-wind .wind-start{
     height: 100%;
     overflow: hidden;
-    margin-right: 0;
-    padding-right: 0;
     position: relative;
-
+    left: 4px;
 }
-section.nav-wind .wind-start span {
+section.nav-wind div.wind-start img {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_off.png')
-    no-repeat center ;
+    left: 12%;
+    top: 25%;
+    z-index: 3;
 }
-section.nav-wind .wind-start video:hover {
+section.nav-wind div.wind-start .pc-start:hover {
     opacity: 0.5;
 }
+
 /*section.nav-wind .wind-right .wind-start .pc-start span {*/
 /*    position: absolute;*/
 /*    background: url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_hover.png")*/
