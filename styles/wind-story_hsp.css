@@ -13,7 +13,6 @@ button {
 body {
     font-size: 16px;
 }
-
 /* 해더 */
 header.header-container {
     display: flex;
@@ -33,7 +32,7 @@ header.header-container .header-left .header-menu-icon{
     margin-right: 5px;
 }
 header.header-container .header-logo {
-    padding-left: 8%;
+    padding-left: 10.5%;
 }
 header.header-container .header-right {
     display: flex;
@@ -41,16 +40,16 @@ header.header-container .header-right {
     align-items: center;
 }
 header.header-container .header-right .hyundai-card {
-    font-size: 1em;
+    font-size: 0.95em;
     position: relative;
-    padding: 5px 10px;
+    padding: 5px 20px;
     height: 100%;
 }
 header.header-container .header-right .hyundai-card .n-badge i {
     color: #0076fd;
     position: absolute;
-    left: 50%;
-    top: -5%
+    left: 55.5%;
+    top: -5.5%
 }
 header.header-container .header-right .hyundai-card .n-badge span {
     font-size: 0.7em;
@@ -64,45 +63,76 @@ header.header-container .header-right .hyundai-card:hover {
     cursor: pointer;
 }
 header.header-container .header-right .hidden-card-name {
-    display: none;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.7em;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    padding: 1px 5px;
+    right: -5px;
+    top: 25px;
+    opacity: 0;
+}
+header.header-container .header-right .hyundai-card:hover .hidden-card-name {
+    opacity: 1;
 }
 header.header-container .header-right .find-pc {
-    padding-left: 10px;
-}
-header.header-container .header-right .find-icon a {
+    padding-left: 30px;
+    position: relative;
     display: block;
     width: 25px;
     height: 25px;
     background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
 }
-header.header-container .header-right .find-icon a:hover {
+header.header-container .header-right .find-pc:hover {
     background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
+    cursor: pointer;
 }
-
+header.header-container .header-right .find-pc:hover .hidden-find-pc{
+    opacity: 1;
+}
 header.header-container .header-right .hidden-find-pc {
-    display: none;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.7em;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    padding: 1px 5px;
+    right: -2px;
+    top: 25px;
+    opacity: 0;
+}
+header.header-container .header-right .find-icon:hover .hidden-find-pc {
+    opacity: 1;
 }
 header.header-container .header-right .join {
-    font-size: 0.9em;
+    font-size: 0.95em;
     padding: 5px 10px;
     height: 100%;
+    margin-right: 5px;
 }
 header.header-container .header-right .join:hover {
     color: #0076fd;
 }
 header.header-container .header-right .log-in {
-    font-size: 1em;
+    font-size: 0.9em;
     border: 2px solid #000;
-    border-radius: 15px;
+    border-radius: 25px;
     height: 100%;
-    padding: 7px 20px;
-    font-weight: 700;
+    padding: 8px 18px;
+    font-weight: 750;
+    margin-right: 10px;
+    transform: scale(1.1);
 }
 header.header-container .header-right .log-in:hover {
     color: #fff;
     border: 2px solid #0076fd;
     background: #0076fd;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 /* nav */
@@ -195,7 +225,7 @@ aside.right-cd-playlist {
     color: #fff;
     position: sticky;
     left: 83%;
-    top: 13em;
+    top: 13.35em;
     height: 110px;
     width: 10%;
     z-index: 11;
@@ -227,9 +257,7 @@ aside.right-cd-playlist .hidden-cd-list:hover {
 
 /* 메인 컨텐츠*/
 main.main-container {
-    width: 99vw;
-    background: no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/visual_250522.jpg");
-    background-size: contain;
+    background: top center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/visual_250522.jpg");
 }
 .main-container section.main-content {
     display: flex;
@@ -285,7 +313,7 @@ main.main-container {
     opacity: inherit;
 }
 .main-content .info-img-under-bar .info-bar-icon .info-nav ul li span {
-    flex: 1;                /* 핵심: 너비를 꽉 채워야 줄임 처리됨 */
+    flex: 1;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -327,17 +355,19 @@ main.main-container {
     opacity: 1;
 }
 .center-info  .plus-icon  {
-    position: absolute;
     color: #fff;
-    left: 21.5%;
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 22.2%;
     font-size: 1.3em;
     top: 40%;
-    border-radius: 50%;
-    /*font-weight: bold;*/
-    border: 1px #ffffff solid;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(3px);
 }
 .center-info  .plus-icon:hover {
     cursor: pointer;
+    transform: rotate(360deg);
 }
 .center-info  .center-right-list {
     height: 180px;
@@ -351,4 +381,75 @@ main.main-container {
 .center-info  .center-right-list li{
     display: flex;
     justify-content: space-between;
+}
+.center-info  .center-right-list li span{
+    opacity: 0.5;
+}
+.center-info  .center-right-list li a:hover{
+    cursor: pointer;
+}
+.center-media {
+    margin-top: 80px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-media h3 {
+    font-size: 2em;
+    color: #fbfbfb;
+    font-weight: 700;
+}
+.center-media h3:hover {
+    cursor: pointer;
+}
+.center-media  .center-media-icon {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.center-media  .center-media-icon button img{
+    width: 8px;
+    height: 14px;
+    opacity: 0.5;
+}
+.center-media  .center-media-icon button img:hover{
+    cursor: pointer;
+}
+.center-media  .center-media-icon .media-bar {
+    border: 2px solid #fdfdfd;
+    width: 80%;
+    background: #605f5b;
+}
+.center-media .media-tv  button{
+    font-size: 1.3em;
+    color: #f9f9f9;
+}
+.center-media .media-tv  button:hover {
+    cursor: pointer;
+}
+.center-media .media-tv  .tv-right{
+    font-size: 1.3em;
+    color: #f9f9f9;
+    opacity: 0.5;
+}
+.center-media .plus-icon {
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+.plus-icon:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+
+.sub-content {
+    border: 2px solid red;
+    background: center center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/job_bg.jpg");
 }
