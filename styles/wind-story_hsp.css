@@ -447,9 +447,33 @@ main.main-container {
     cursor: pointer;
     transform: rotate(360deg);
 }
+.media-img {
+    position: relative;
+    top: 70px;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+.media-img  a img{
+    height: 220px;
+    width: 390px;
+    object-fit: cover;
+    display: block;
+}
+.media-img p {
+    width: 390px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 
 .sub-content {
     border: 2px solid red;
     background: center center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/job_bg.jpg");
+    display:  flex;
 }
