@@ -112,16 +112,20 @@ section.nav-wind {
     align-items: center;
     background: #090806;
     color: #ffffff;
-    height: 10.5vh;
-    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
 }
 .nav-wind .wind-logo {
     flex: 2;
+    position: relative;
+    right: 2em;
+}
+.nav-wind .wind-logo:hover {
+    cursor: pointer;
 }
 .nav-wind .wind-logo img {
+    width: 55%;
 }
 section.nav-wind .center-list {
     flex: 7;
@@ -129,7 +133,7 @@ section.nav-wind .center-list {
 section.nav-wind .center-list ul{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
 }
 section.nav-wind .center-list ul li {
@@ -138,10 +142,12 @@ section.nav-wind .center-list ul li {
 section.nav-wind .center-list ul li a:hover {
     color: #88cafd;
 }
+
 section.nav-wind .wind-right {
     flex: 1;
     align-items: center;
     color: #fff;
+
 }
 section.nav-wind .wind-right .wind-coupon-youtube{
     display: flex;
@@ -155,27 +161,67 @@ section.nav-wind .wind-right .wind-coupon-youtube a:hover{
 }
 .wind-start .pc-start {
     padding: 0;
-}
-/*section.nav-wind .wind-right .wind-start{*/
 
-/*}*/
+}
 section.nav-wind .wind-start{
-    height: 100%;
     overflow: hidden;
     position: relative;
     /*left: 4px;*/
 }
 section.nav-wind div.wind-start img {
     position: absolute;
+    z-index: 2;
     left: 12%;
     top: 25%;
-    z-index: 3;
+}
+section.nav-wind div.wind-start .pc-start {
+    height: 100%;
 }
 section.nav-wind div.wind-start .pc-start:hover {
     opacity: 0.5;
 }
+section.nav-wind div.wind-start .pc-start video {
+    transform: scale(1.1);
+}
 
 aside.right-cd-playlist {
-    position: absolute;
+    display: flex;
+    background: no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/bgm_border.png");
+    background-size: cover;
+    color: #fff;
+    position: sticky;
+    left: 83%;
+    top: 15em;
+    height: 125px;
+    width: 11%;
+    z-index: 11;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+
 }
+aside.right-cd-playlist .cd-icon {
+    position: absolute;
+    left: 35%;
+    bottom: 99%;
+}
+aside.right-cd-playlist .cd-bar {
+    border: 2px solid gray;
+    width: 80%;
+}
+
+aside.right-cd-playlist .hidden-cd-list {
+    position: absolute;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+aside.right-cd-playlist .hidden-cd-list:hover {
+        cursor: pointer;
+}
+
+
+
 
