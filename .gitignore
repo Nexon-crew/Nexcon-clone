@@ -8,6 +8,12 @@
 # macbook
 .DS_Store
 
+# gitignore 추가했는데 ignore 적용이 안되서 새로 추가함
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
 # User-specific stuff
 .idea/
 .idea/**/workspace.xml
