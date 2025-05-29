@@ -784,6 +784,8 @@ header.header-container .header-right .log-in:hover {
     }
 }
 
+
+/*소셜 섹션*/
 .social-section {
 
     width: 100%;
@@ -893,3 +895,70 @@ header.header-container .header-right .log-in:hover {
     text-decoration: underline;
     transition: 0.4s ease;
 }
+
+.social-section .social-link{
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    gap: 3rem;
+}
+.social-section .social-link .official-sns{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e9844b;
+}
+.social-section .social-link .social-icons-link{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-section .social-link .social-icons-link .fa-youtube{
+    font-size: 2.8rem;
+    margin-left: 1rem;
+    margin-top: 1.1rem;
+}
+.social-section .social-link .social-icons-link .fa-instagram{
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    margin-top: 1.1rem;
+}
+.social-section .social-link .social-icons-link .fa-discord{
+    font-size: 2.8rem;
+    margin-left: 1.3rem;
+    margin-top: 1.2rem;
+}
+.social-section .social-link .social-icons-link a{
+    /*border: 1px solid red;*/
+    width: 5rem;
+    height: 5rem;
+    background:url("/src/social-bg_bsh.png");
+    transition: 0.4s;
+}
+.social-section .social-link .social-icons-link a:hover{
+    background:url("/src/social-bg-hover_bsh.png");
+    color:#e9844b;
+}
+
+.top-button{
+    width: 6rem;
+    height: 6rem;
+    margin-left: 48.5%;
+    margin-top: 7rem;
+}
+.top-button a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:url("/src/top_bsh.png");
+    transition: 0.4s;
+}
+.top-button a:hover{
+    background: url("/src/top-hover_bsh.png");
+}
+
+
+
