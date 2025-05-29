@@ -7,110 +7,218 @@ button {
 }
 
 /* 최상단 넥슨 헤더 */
-.header-nexon {
-    border: 4px solid red;
-    height: 7vh;
+header.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1%;
+    font-size: 16px;
+    height: 8vh;
 }
-.left-gnb-bar {
-    width: 20%;
-    height: 70%;
-    padding-left: 15px;
-    line-height: 1.4;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.left-gnb-bar .gnb-menu-btn .fas {
-    padding-top: 5px;
-    padding-right: 5px;
-    font-size: 17px;
+header.header-container .header-left {
+    font-size: 1.1em;
     transition: .4s;
 }
-.left-gnb-bar .gnb-menu-btn .fas:hover {
-    color: #007bff;
+header.header-container .header-left:hover {
+    color: #0076fd;
     cursor: pointer;
 }
-.left-gnb-bar .gnb-menu-txt {
+header.header-container .header-left .header-menu-icon{
+    margin-right: 5px;
+}
+header.header-container .header-logo {
+    padding-left: 8%;
+}
+header.header-container .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header.header-container .header-right .hyundai-card {
+    font-size: 1em;
+    position: relative;
+    padding: 5px 10px;
+    height: 100%;
+}
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 50%;
+    top: -5%
+}
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
+}
+header.header-container .header-right .hyundai-card {
     transition: .4s;
 }
-.left-gnb-bar .gnb-menu-txt:hover {
-    color: #007bff;
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
     cursor: pointer;
 }
-.right-gnb-bar {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
+header.header-container .header-right .hidden-card-name {
+    display: none;
 }
-.gnb-card-icon {
-    transition: .4s;
+header.header-container .header-right .find-pc {
+    padding-left: 10px;
 }
-.gnb-card-icon:hover {
-    color: #007bff;
-}
-.gnb-pc-room a {
+header.header-container .header-right .find-icon a {
     display: block;
     width: 25px;
     height: 25px;
     background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
+    transition: .4s;
 }
-.gnb-pc-room a:hover {
+header.header-container .header-right .find-icon a:hover {
     background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
 }
-.gnb-pc-room-icon {
+
+header.header-container .header-right .hidden-find-pc {
+    display: none;
+}
+header.header-container .header-right .join {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 5px 10px;
+    height: 100%;
     transition: .4s;
 }
-.gnb-pc-room-icon:hover {
-    color: #007bff;
+header.header-container .header-right .join:hover {
+    color: #0076fd;
 }
-.gnb-register-txt {
-    transition: .4s;
-}
-.gnb-register-txt:hover {
-    color: #007bff;
-}
-.gnb-login {
-    border: 2px solid black;
+header.header-container .header-right .log-in {
+    font-size: 1em;
+    border: 2px solid #000;
     border-radius: 17px;
-    padding: 7px 17px;
+    height: 100%;
+    padding: 7px 20px;
+    font-weight: 700;
     transition: .4s;
 }
-.gnb-login-txt {
-    font-weight: 700;
-}
-.gnb-login:hover {
-    border: 2px solid #007bff;
-    background: #007bff;
+header.header-container .header-right .log-in:hover {
     color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 17px;
+    cursor: pointer;
 }
+
+
 
 /* 더 파이널스 (서브) 헤더 */
 .header-the-finals {
+    position: sticky;
+    top: 0;
     background: #000;
-    border: 4px solid red;
-    height: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
+    z-index: 1000;
 }
 .left-tnb-bar {
-    border: 4px solid red;  /* 서브헤더 15 70(jc:l) 15 비율 */
+    /* 서브헤더 15 70(jc:l) 15 비율 */
     width: 15%;
+    display: flex;
+    justify-content: center;
 }
-.left-tnb-bar .tnb-bar-logo-img {
+.left-tnb-bar .tnb-bar-logo {
     width: 80%;
 }
-.list-tnb-bar .tnb-nav {
+.left-tnb-bar .tnb-bar-logo-img {
+    width: 100%;
+}
+.list-tnb-bar {
+    /*border: 4px solid purple;*/
+    width: 100%;
+    height: inherit;
     display: flex;
 }
+.list-tnb-bar .tnb-nav {
+    /*border: 4px solid orange;*/
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: left;
+}
 .list-tnb-bar .tnb-nav .tnb-nav-items {
+    /*border: 4px solid red;*/
+    width: 10%;
+    height: 100%;
+    color: #c8c8c8;
+    font-weight: 700;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+}
+.list-tnb-bar .tnb-nav .tnb-nav-items:hover {
+    cursor: pointer;
     color: #fff;
+    border-bottom: 4px solid red;
 }
 .right-tnb-bar .tnb-game-play-list {
     display: none;
+}
+.right-tnb-bar {
+    height: 100%;
+}
+.right-tnb-bar .tnb-game-play-btn {
+    height: 100%;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_bg.webp") no-repeat center/cover;
+    transition: .2s;
+}
+.right-tnb-bar .tnb-game-play-btn:hover {
+    cursor: pointer;
+}
+.right-tnb-bar .tnb-game-play-btn:hover img {
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_d.png");
+}
+
+
+/* 메인 비디오 타이틀 container */
+.container .main-video-title video {
+    position: absolute;
+    border: 4px solid purple;
+}
+.container .main-video-title .main-top-title {
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+.container .main-video-title .main-title {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.container .main-video-title .main-title2 {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container .main-video-title .main-title-btn {
+    position: relative;
+    z-index: 100;
+}
+.container .main-video-title .main-title-list {
+    position: relative;
+    z-index: 100;
 }
