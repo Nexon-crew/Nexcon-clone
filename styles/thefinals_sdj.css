@@ -130,6 +130,7 @@ header.header-container .header-right .log-in:hover {
 }
 .left-tnb-bar .tnb-bar-logo {
     width: 80%;
+    padding-left: 10px;
 }
 .left-tnb-bar .tnb-bar-logo-img {
     width: 100%;
@@ -158,12 +159,12 @@ header.header-container .header-right .log-in:hover {
     justify-content: center;
     align-items: center;
 
-    transition: 1s;
+    transition: .2s;
 }
 .list-tnb-bar .tnb-nav .tnb-nav-items:hover {
     cursor: pointer;
     color: #fff;
-    border-bottom: 4px solid red;
+    border-bottom: 2px solid red;
 }
 .right-tnb-bar .tnb-game-play-list {
     display: none;
@@ -174,7 +175,6 @@ header.header-container .header-right .log-in:hover {
 .right-tnb-bar .tnb-game-play-btn {
     height: 100%;
     background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_bg.webp") no-repeat center/cover;
-    transition: .2s;
 }
 .right-tnb-bar .tnb-game-play-btn:hover {
     cursor: pointer;
@@ -232,7 +232,7 @@ header.header-container .header-right .log-in:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .container .main-video-title .main-title-btn {
     border: 3px solid #fff;
@@ -301,8 +301,8 @@ header.header-container .header-right .log-in:hover {
     display: flex;
 }
 .main-latest-news-list-items-card {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     overflow: hidden;
     margin-top: 30px;
 }
@@ -310,9 +310,15 @@ header.header-container .header-right .log-in:hover {
     width: 100%;
     height: 50%;
 }
+.main-latest-news-list-items-card img:hover {
+    cursor: pointer;
+}
 .main-latest-news-list-items-card .main-latest-news-list-items-card-title {
     color: #fff;
     margin-top: 16px;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-title:hover {
+    cursor: pointer;
 }
 .main-latest-news-list-items-card .main-latest-news-list-items-card-date {
     color: #fff;
@@ -325,7 +331,7 @@ header.header-container .header-right .log-in:hover {
     margin: 0 42%;
     padding: 20px 25px;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
 }
 .main-latest-news-btn:hover {
     cursor: pointer;
@@ -349,12 +355,13 @@ header.header-container .header-right .log-in:hover {
 }
 .main-season-fg {
     position: absolute;
-    top: 550px;
+    top: 380px;
     right: 10px;
 }
 .main-season-container {
     position: relative;
-    top: 550px;
+    top: 450px;
+    height: 30vh;
     padding-left: 70px;
 }
 .main-season-title {
@@ -375,24 +382,129 @@ header.header-container .header-right .log-in:hover {
     font-size: 16px;
     line-height: 1.4;
 }
+.main-season-btn {
+    border: 2px solid #fff;
+    margin-top: 50px;
+    padding: 20px 50px;
+}
+.main-season-btn:hover {
+    cursor: pointer;
+}
+.main-season-btn-txt {
+    color: #fff;
+    font-size: 20px;
+}
+
+
 
 /* 사이드네비게이션 */
 .main-snb {
     position: fixed;
-    top: 35%;
+    top: 40%;
     right: 10px;
     width: fit-content;
     height: fit-content;
     /*border: 4px solid red;*/
 }
-.main-snb-list-items {
+.main-snb-list-items.discord {
+    border: 4px solid royalblue;
+    border-radius: 50%;
+    background: royalblue;
+    margin-top: 15px;
+}
+.main-snb-list-items.twitter {
     border: 4px solid #007bff;
     border-radius: 50%;
     background: #0076fd;
     margin-top: 15px;
 }
+.main-snb-list-items.youtube {
+    border: 4px solid red;
+    border-radius: 50%;
+    background: red;
+    margin-top: 15px;
+}
+/*.main-snb-list-items.instagram {*/
+/*    border: 4px solid orangered;*/
+/*    border-radius: 50%;*/
+/*    background: orangered;*/
+/*    margin-top: 15px;*/
+/*}*/
 .main-snb-list-items img{
     width: 50px;
     height: 50px;
     padding: 10px;
+}
+.main-snb-list-items:hover {
+    cursor: pointer;
+}
+
+
+
+/* 푸터 */
+.footer-the-finals {
+    background: rgb(31, 29, 36);
+    /*border: 4px solid red;*/
+    height: 50vh;
+    padding: 50px;
+}
+.footer-description {
+    display: flex;
+    padding-top: 50px;
+}
+.footer-description-txt-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.footer-description-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-description-txt {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.footer-brand-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-top: 70px;*/
+    margin: 70px 0 0 0;
+}
+.footer-brand-logo-list-left {
+    display: flex;
+}
+.footer-brand-logo-list-left-items {
+    margin-right: 20px;
+}
+.footer-brand-logo-list-right {
+    display: flex;
+}
+.footer-brand-logo-list-right-items {
+    margin-left: 20px;
+}
+.footer-etc-text {
+    margin-top: 20px;
+}
+.footer-etc-list {
+    display: flex;
+}
+.footer-etc-list-items {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.footer-etc-blah {
+    font-size: 10px;
+    color: #fff;
+    line-height: 1.8;
+    opacity: 0.6;
 }
