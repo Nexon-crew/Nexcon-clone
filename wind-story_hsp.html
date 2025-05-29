@@ -81,7 +81,6 @@
     </div>
     <div class="wind-start">
         <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_off.png" alt="">
-<!--        <span class="pc-start-img"></span>-->
         <button class="pc-start">
             <video class="start-video" src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/start.mp4"
                    autoplay muted loop playsinline>
@@ -123,11 +122,11 @@
             </button>
 
         </div>
-        <button class="hidden-cd-list"> </button>
+        <button class="hidden-cd-list"></button>
     </aside>
 
 
-    <!-- 메인컨텐츠 에 배경이미지 1 밑에 하나 더있을 예정 -->
+    <!-- 메인컨텐츠 정보 및 공지사항-->
     <section class="main-content">
         <div class="main-item">
             <div class="main-info">
@@ -154,11 +153,11 @@
                         </button>
                         <div class="info-nav">
                             <ul>
-                                <li><span >• 반려 환수를 키워보길 바람</span></li>
-                                <li><span >• 반려 환수 간식 획득이벤트</span></li>
-                                <li><span >• [불멸] 수호/탑승 재합성 쿠폰 사용 방법 안내</span></li>
-                                <li><span >• 광속도약 특별 지원</span></li>
-                                <li><span >• 반려 환수를 키워보길 바람</span></li>
+                                <li><span>• 반려 환수를 키워보길 바람</span></li>
+                                <li><span>• 반려 환수 간식 획득이벤트</span></li>
+                                <li><span>• [불멸] 수호/탑승 재합성 쿠폰 사용 방법 안내</span></li>
+                                <li><span>• 광속도약 특별 지원</span></li>
+                                <li><span>• 반려 환수를 키워보길 바람</span></li>
                             </ul>
                         </div>
                     </div>
@@ -250,19 +249,91 @@
     <section class="sub-content">
         <div class="sub-item">
             <div class="sub-title">
-                <button><img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/new_tab_job.png" alt="직업소개">
+                <button class="left-blue"><img
+                        src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/new_tab_job.png" alt="직업소개">
                 </button>
-                <button><img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/new_tab_shinsu.png"
-                             alt="신수변신"></button>
+                <button class="right-red"><img
+                        src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/new_tab_shinsu.png"
+                        alt="신수변신"></button>
             </div>
         </div>
         <div class="sub-character">
-            <a href=""><i class="far fa-arrow-alt-circle-left"></i></a>
-            <a href=""><img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/character_240704.png"
-                            alt=""></a>
-            <a href=""><i class="far fa-arrow-alt-circle-right"></i></a>
+            <a href="" class="left-arrow arrow"><img src="src/left-arrow_phs.png" alt=""></a>
+            <a href="" class="warrior-small-img"><img src="src/warrior_phs.png" alt=""></a>
+            <a href="" class="characters"><img src="src/gray-wind-char_phs.png" alt=""></a>
+            <a href="" class="right-arrow arrow"><img src="src/right-arrow_phs.png" alt=""></a>
         </div>
+
+        <!-- 서브 컨텐츠 전사 스킬 -->
+        <section class="warrior-container">
+            <div class="sub-warrior">
+                <div class="warrior-symbol">
+                    <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/i_soldier.png" alt="검">
+                </div>
+            </div>
+            <div class="warrior-intro">
+                <h2>전사</h2>
+                <span>강인한 체력을 바탕으로,
+                <br> 전투 시 최전방에 나선다.
+            </span>
+            </div>
+            <div class="warrior-video">
+                <video controls="controls"
+                       src="https://pvi.dn.nexoncdn.co.kr/baramy/brand/230921/soldier/soldier_new_video3.mp4"
+                       autoplay muted loop playsinline>
+                </video>
+            </div>
+            <div class="warrior-skill-img">
+                <img src="src/soldier_skill_phs.png" alt="">
+            </div>
+            <div class="warrior-skills-img">
+                <img src="src/soldier-skills_phs.png" alt="">
+            </div>
+            <div class="warrior-skills-text">
+                <p><span>포효검황:</span>크게 포효하여 주변 적들을 공격한다.</p>
+            </div>
+            <div class="warrior-big-img">
+                <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/char_soldier.png" alt="왕전사">
+            </div>
+            <div class="grade-background">
+                <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/level_bg.png" alt=등급배경>
+            </div>
+            <div class="warrior-grade">
+                <ul>
+                    <li>
+                        <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level01.png"
+                             alt="1차">
+                        <p><span>검객</span>(1차승급)</p>
+                    </li>
+                    <li><img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level02.png"
+                             alt="2차">
+                        <p><span>검제</span>(2차승급)</p>
+                    </li>
+                    <li>
+                        <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level03.png"
+                             alt="3차">
+                        <p><span>검황</span>(3차승급)</p>
+                    </li>
+                    <li>
+                        <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level04.png"
+                             alt="4차">
+                        <p><span>검성</span>(4차승급)</p>
+                    </li>
+                    <li>
+                        <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level05.png"
+                             alt="5차">
+                        <p><span>검신</span>(5차승급)</p>
+                    </li>
+                    <li>
+                        <img src="https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/soldier_level06.png"
+                             alt="6차">
+                        <p><span>검천</span>(6차승급)</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </section>
+
 
     <!--메인 다운로드-->
     <section class="download">
