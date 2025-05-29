@@ -14,7 +14,6 @@ body {
     font-size: 16px;
 }
 
-
 /* 해더 */
 header.header-container {
     display: flex;
@@ -28,6 +27,7 @@ header.header-container .header-left {
 }
 header.header-container .header-left:hover {
     color: #0076fd;
+    cursor: pointer;
 }
 header.header-container .header-left .header-menu-icon{
     margin-right: 5px;
@@ -61,6 +61,7 @@ header.header-container .header-right .hyundai-card .n-badge span {
 }
 header.header-container .header-right .hyundai-card:hover {
     color: #0076fd;
+    cursor: pointer;
 }
 header.header-container .header-right .hidden-card-name {
     display: none;
@@ -158,7 +159,7 @@ section.nav-wind .wind-right .wind-coupon-youtube a {
 }
 section.nav-wind .wind-right .wind-coupon-youtube a:hover{
     opacity: 0.6;
-}
+    }
 .wind-start .pc-start {
     padding: 0;
 
@@ -174,32 +175,34 @@ section.nav-wind div.wind-start img {
     left: 12%;
     top: 25%;
 }
+section.nav-wind div.wind-start img:hover {
+    cursor: pointer;
+}
 section.nav-wind div.wind-start .pc-start {
     height: 100%;
 }
 section.nav-wind div.wind-start .pc-start:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 section.nav-wind div.wind-start .pc-start video {
     transform: scale(1.1);
 }
-
 aside.right-cd-playlist {
     display: flex;
     background: no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/bgm_border.png");
-    background-size: cover;
+    background-size: contain;
     color: #fff;
     position: sticky;
     left: 83%;
-    top: 15em;
-    height: 125px;
-    width: 11%;
+    top: 13em;
+    height: 110px;
+    width: 10%;
     z-index: 11;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 1rem;
-
 }
 aside.right-cd-playlist .cd-icon {
     position: absolute;
@@ -207,14 +210,14 @@ aside.right-cd-playlist .cd-icon {
     bottom: 99%;
 }
 aside.right-cd-playlist .cd-bar {
-    border: 2px solid gray;
+    border: 1px solid #4c4c4c;
     width: 80%;
 }
 
 aside.right-cd-playlist .hidden-cd-list {
     position: absolute;
     bottom: 0;
-    width: 1.5em;
+    width: 3em;
     height: 1.5em;
     border-radius: 50%;
 }
@@ -222,6 +225,130 @@ aside.right-cd-playlist .hidden-cd-list:hover {
         cursor: pointer;
 }
 
+/* 메인 컨텐츠*/
+main.main-container {
+    width: 99vw;
+    background: no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/visual_250522.jpg");
+    background-size: contain;
+}
+.main-container section.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4em;
+}
+.info-img {
+    border-bottom: 8px solid #0082f0;
+    width: 90%;
+}
+.info-img-under-bar {
+    width: 1200px;
+    position: relative;
+    bottom: 8px;
+}
+.main-content .info-img-under-bar .info-bar-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 0 2em;
+}
+.main-content .info-img-under-bar .info-bar-icon button{
+    padding-right: 1.4em;
+    color: #fff;
+}
+.main-content .info-img-under-bar .info-bar-icon button:hover {
+    cursor: pointer;
+}
+.main-content .info-img-under-bar .info-bar-icon button span {
+    font-size: 2em;
+    opacity: 0.5;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li  {
+    display: flex;
+    width: 180px;
+    align-items: center;
+    font-size: 1.1em;
+    height: 4.5em;
+    opacity: 0.5;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li:first-child {
+    opacity: inherit;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li span {
+    flex: 1;                /* 핵심: 너비를 꽉 채워야 줄임 처리됨 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li:hover {
+    opacity: inherit;
+    cursor: pointer;
+}
 
+/*중앙 컨텐츠*/
+.center-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #fff;
+    width: 1200px;
+    margin-top: 4em;
+    position: relative;
 
-
+}
+.center-info ul.center-left-list {
+    font-size: 1.8em;
+    font-weight: 700;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    flex: 1;
+}
+.center-info .center-left-list li {
+    opacity: 0.5;
+}
+.center-info .center-left-list li:first-child {
+    opacity: 1;
+}
+.center-info .center-left-list li:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.center-info  .plus-icon  {
+    position: absolute;
+    color: #fff;
+    left: 21.5%;
+    font-size: 1.3em;
+    top: 40%;
+    border-radius: 50%;
+    /*font-weight: bold;*/
+    border: 1px #ffffff solid;
+}
+.center-info  .plus-icon:hover {
+    cursor: pointer;
+}
+.center-info  .center-right-list {
+    height: 180px;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.1em;
+    padding-left: 4.5em;
+}
+.center-info  .center-right-list li{
+    display: flex;
+    justify-content: space-between;
+}
