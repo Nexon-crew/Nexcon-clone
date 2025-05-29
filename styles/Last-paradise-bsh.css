@@ -895,7 +895,7 @@ header.header-container .header-right .log-in:hover {
     text-decoration: underline;
     transition: 0.4s ease;
 }
-
+/*SNS 링크 버튼*/
 .social-section .social-link{
     /*border: 1px solid red;*/
     display: flex;
@@ -942,7 +942,7 @@ header.header-container .header-right .log-in:hover {
     background:url("/src/social-bg-hover_bsh.png");
     color:#e9844b;
 }
-
+/*TOP 버튼*/
 .top-button{
     width: 6rem;
     height: 6rem;
@@ -959,6 +959,43 @@ header.header-container .header-right .log-in:hover {
 .top-button a:hover{
     background: url("/src/top-hover_bsh.png");
 }
+
+/*FOOTER*/
+footer{
+    height: 40vh;
+    background: #000;
+    padding: 0 20rem;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e8e8e8;
+}
+.footer-flex .left-ele{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    margin-left: 20rem;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
