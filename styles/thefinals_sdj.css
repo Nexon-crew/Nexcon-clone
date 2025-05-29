@@ -1,6 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
 
 /* 태그 기본 스타일 초기화 */
+body {
+}
 button {
     background: none;
     border: none;
@@ -178,14 +180,24 @@ header.header-container .header-right .log-in:hover {
     cursor: pointer;
 }
 .right-tnb-bar .tnb-game-play-btn:hover img {
+    object-fit: contain;
     background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_d.png");
 }
 
 
 /* 메인 비디오 타이틀 container */
+.container {
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/main/news/img_background.png") no-repeat center/cover;
+
+}
 .container .main-video-title video {
     position: absolute;
-    border: 4px solid purple;
+    top: 17vh;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;  /* video 크기조절 */
+    /*border: 4px solid purple;*/
+
 }
 .container .main-video-title .main-top-title {
     color: #fff;
@@ -214,11 +226,173 @@ header.header-container .header-right .log-in:hover {
     align-items: center;
     padding-top: 20px;
 }
-.container .main-video-title .main-title-btn {
+.container .main-video-title .main-title-div {
     position: relative;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container .main-video-title .main-title-btn {
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 100;
+    padding: 15px 40px;
+    transition: .4s;
+}
+.container .main-video-title .main-title-btn:hover {
+    cursor: pointer;
+}
+.container .main-video-title .main-title-btn:hover .main-title-btn-txt {
+    color: orange;
+    display: none;
+}
+.container .main-video-title .main-title-btn .main-title-btn-txt2 {
+    font-size: 25px;
+    font-style: italic;
+    color: #fff;
+    display: none;
+}
+.container .main-video-title .main-title-btn:hover .main-title-btn-txt2 {
+    display: inherit;
+}
+.container .main-video-title .main-title-btn-txt {
+    font-size: 20px;
+    color: #fff;
 }
 .container .main-video-title .main-title-list {
     position: relative;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    top: 100px;
+    /*border: 4px solid red;*/
+}
+.container .main-video-title .main-title-list .main-title-list-items {
+    margin: 0 30px;
+    opacity: 0.7;
+}
+
+
+
+/* 메인 최신소식 */
+
+.main-latest-news {
+    position: relative;
+    top: 200px;
+}
+.main-latest-news .main-latest-news-title {
+    font-size: 85px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 100px;
+}
+.main-latest-news .main-latest-news-list {
+    /*border: 4px solid red;*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.main-latest-news-list-items {
+    display: flex;
+}
+.main-latest-news-list-items-card {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.main-latest-news-list-items-card img {
+    width: 100%;
+    height: 50%;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-title {
+    color: #fff;
+    margin-top: 16px;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-date {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+.main-latest-news-btn {
+    border: 2px solid #fff;
+    margin: 0 42%;
+    padding: 20px 25px;
+    position: relative;
+    z-index: 1000;
+}
+.main-latest-news-btn:hover {
+    cursor: pointer;
+}
+.main-latest-news-btn-txt {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* 메인 시즌 */
+.main-season {
+    width: 100%;
+    /*border: 4px blue solid;*/
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+}
+.main-season-bg {
+    width: 100%;
+}
+.main-season-fg {
+    position: absolute;
+    top: 550px;
+    right: 10px;
+}
+.main-season-container {
+    position: relative;
+    top: 550px;
+    padding-left: 70px;
+}
+.main-season-title {
+    font-size: 50px;
+    font-weight: 1000;
+    font-style: italic;
+    padding-top: 20px;
+}
+.main-season-sub-title {
+    color: #fff;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.main-season-description {
+    width: 500px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* 사이드네비게이션 */
+.main-snb {
+    position: fixed;
+    top: 35%;
+    right: 10px;
+    width: fit-content;
+    height: fit-content;
+    /*border: 4px solid red;*/
+}
+.main-snb-list-items {
+    border: 4px solid #007bff;
+    border-radius: 50%;
+    background: #0076fd;
+    margin-top: 15px;
+}
+.main-snb-list-items img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
