@@ -111,9 +111,9 @@ main {
     background-size: cover;      /* 화면을 꽉 채우도록 */
     background-position: center; /* 가운데 정렬 */
     background-repeat: no-repeat;/* 반복하지 않도록 */
-    height: 400px;
-    min-height: 100vh;
-    border: 3px solid black;
+    height: 550px;
+    /*min-height: 100vh;*/
+    /*border: 3px solid black;*/
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -124,29 +124,32 @@ main {
 main .section-frame {
     /*background: linear-gradient(to right, #d7d3cc, #f5f5f5);*/
     /*border: 3px solid blue;*/
-    background-image: url('../src/my-maplestory_kdh_.png');
+    /*background-image: url('../src/my-maplestory_kdh_.png');*/
+    background-image: url('https://rs.nxfs.nexon.com/bannerusr/25/5/bBf621123026642.png');
+
     width: 100%;
-    height: 60%;
+    /*height: 60%;*/
+    height: 550px;
     /* 음영 추가 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /*오버레이 기법 사용 */
-main .section-frame::before {
-    content: "";
-    position: absolute;
-    top: 65px; left: 0;
-    width: 100%;
-    height: 60%;
-    background: rgba(0, 0, 0, 0.4); /* 오버레이 색상: 검정에 40% 투명도 */
-    z-index: 1;
-}
+/*main .section-frame::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 65px; left: 0;*/
+/*    width: 100%;*/
+/*    height: 550px;*/
+/*    background: rgba(0, 0, 0, 0.4); !* 오버레이 색상: 검정에 40% 투명도 *!*/
+/*    z-index: 1;*/
+/*}*/
 
-main .section-frame > * {
-    position: relative;
-    z-index: 2;
+/*main .section-frame > * {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
 
-}
+/*}*/
 
 main .banner-content {
     margin-bottom: 40px;
@@ -207,7 +210,7 @@ main .banner-images {
     gap: 20px;
     z-index: 90;
     /*border: 3px solid pink;*/
-    margin-top: 173px;
+    margin-top: 475px;
 }
 
 main .banner-images a {
